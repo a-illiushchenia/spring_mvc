@@ -13,4 +13,8 @@
     <definition name="home" extends="template"> <!-- Шаблон главной страницы -->
         <put-attribute name="content" value="/WEB-INF/views/home.jsp"/>
     </definition>
+
+    <definition name="spittles/list" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/spittles/list.jsp"/>
+    </definition>
 </tiles-definitions>
