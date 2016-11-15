@@ -25,10 +25,16 @@ public class SpitterController {
     @RequestMapping(value="/spittles", method=GET)
     public String listSpittlesForSpitter(
             @RequestParam("spitter") String username, Model model){
-        Spitter spitter = spitterService.getSpinner(username);
+        Spitter spitter = spitterService.getSpitter(username);
         model.addAttribute(spitter);
         model.addAttribute(spitterService.getSpittlesForSpitter(username));
 
         return "spittles/list";
+    }
+
+    @RequestMapping(method=GET, params="new")
+    public String createSpitterProfile(Model model) {
+        model.addAttribute(new Spitter());
+        return "spitters/edit";
     }
 }

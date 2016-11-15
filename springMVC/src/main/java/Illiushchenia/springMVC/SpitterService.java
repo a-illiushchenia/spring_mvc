@@ -11,7 +11,7 @@ public class SpitterService {
         return null;
     }
 
-    public Spitter getSpinner(String username) {
+    public Spitter getSpitter(String username) {
         return new Spitter();
     }
 
