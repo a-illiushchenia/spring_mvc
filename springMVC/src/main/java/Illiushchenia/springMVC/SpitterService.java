@@ -20,14 +20,4 @@ public class SpitterService {
         result.add(new Spittle());
         return result;
     }
-
-    public void saveSpitter(Spitter spitter) {
-
-    }
-
-    public Spitter getSpitter(String username) {
-        Spitter spitter = new Spitter();
-        spitter.setUsername(username);
-        return spitter;
-    }
 }
