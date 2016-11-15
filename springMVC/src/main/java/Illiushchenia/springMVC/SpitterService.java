@@ -12,12 +12,18 @@ public class SpitterService {
     }
 
     public Spitter getSpitter(String username) {
-        return new Spitter();
+        Spitter spitter = new Spitter();
+        spitter.setUsername(username);
+        return spitter;
     }
 
     public List<Spittle> getSpittlesForSpitter(String username) {
         List<Spittle> result = new ArrayList<Spittle>();
         result.add(new Spittle());
         return result;
+    }
+
+    public void saveSpitter(Spitter spitter) {
+
     }
 }
